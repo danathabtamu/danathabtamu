@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>cruise school oprtunity</title>
+	<link rel="stylesheet" type ="text/css" href="lacture.css">
+	<link rel="stylesheet" href="bootstrap.min">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<style>
+	table , td , th{
+		border: 1px solid black;
+	}
+	#title{
+	font-style:italic;
+	}
+</style>
+	<h1 id="title">cruise school</h1>
+	<form method="post" action="html file.html">
+		<fieldset>
+			<legend><strong>scholarship form</strong></legend>
+			<label for="fname">first name <input type="text" name="fname" required><sub>*</sub></label>
+			<br><br>
+			<label for="lname">last name</label>
+			<input type="text" name="lname" required><br><br>
+            <label>email</label class="pull-left">
+            <input type="email" name="email" placeholder="name@domiat.com"><br>
+			<lable>male</lable>
+			<input type="radio" name="sex" value="male">
+			<lable>female</lable>
+			<input type="radio" name="sex" value="female"><br>
+			<label>age</label>
+            <input list="age">
+            <datalist id="age" >
+            	<option value="15-18">age under 18</option>
+            	<option value="18-25">above 18</option>
+            	<option value="25-35">adult</option>
+            </datalist><br><br>
+            <label>when you born</label>
+            <input type="date"><br><br>
+            <label>grade</label>
+            <select name="grade">
+            	<option value="1-8">elementary</option>
+            	<option value="9-12" selected>high school</option>
+            	<option value="graduation">university</option>
+            </select><br><br>
+             <textarea name="essay" rows="10" cols="50" placeholder="write your essay in here"></textarea><br><BR>
+		    <button type="button" onclick="alert('essay is important so,write care fully')">attintion</button><br><br>
+		    <p><b>where did you get about us</b></p>
+		    <label>to my frindes</label>
+		    <input type="checkbox" name="check">
+		    <lable>intearnate</lable>
+		    <input type="checkbox" name="check"><br><br>
+		    <label>what is your faverariot color</label>
+		    <input type="color" autofocus><br><br>
+		    <label>what is the time</label>
+		    <input type="datetime-local"><br><br>
+		    <label>how many brother do you have </label>
+		    <input type="number"
+		    min="0"
+		    max="10"
+		    step="1"
+		    value="2">
+		    <br><br>
+		    <label>search your school</label>
+		    <input type="search"><br><br>
+            <input type="submit" value="submit">
+		    <input type="reset" value="clear">
+		</fieldset>
+	</form>
+</body>
+</html>
